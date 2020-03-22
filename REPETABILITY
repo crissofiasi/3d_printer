@@ -5,3 +5,11 @@ Recv: Standard Deviation: 0.007849
 Recv: 
 Recv: X:81.00 Y:25.00 Z:10.80 E:-400.00 Count A:8480 B:4480 Z:4320
 Recv: ok
+
+*-------------  SERVO PROBE ----------------
+
+Recv: Finished!
+Recv: Mean: -0.847550 Min: -0.855 Max: -0.818 Range: 0.038
+Recv: Standard Deviation: 0.008768
+Recv: 
+Recv: X:84.00 Y:58.00 Z:12.00 E:0.00 Count A:11360 B:2080 Z:4800
