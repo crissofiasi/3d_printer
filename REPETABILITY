@@ -13,3 +13,12 @@ Recv: Mean: -0.847550 Min: -0.855 Max: -0.818 Range: 0.038
 Recv: Standard Deviation: 0.008768
 Recv: 
 Recv: X:84.00 Y:58.00 Z:12.00 E:0.00 Count A:11360 B:2080 Z:4800
+
+
+*------------SERVO PROBE ENGAGING
+
+Recv: Mean: -2.100751 Min: -2.128 Max: -2.073 Range: 0.055
+Recv: Standard Deviation: 0.013012
+Recv: 
+Recv: X:85.00 Y:85.00 Z:10.93 E:0.00 Count A:13600 B:0 Z:3560
+Recv: ok
