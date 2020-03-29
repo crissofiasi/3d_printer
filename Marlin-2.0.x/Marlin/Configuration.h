@@ -738,7 +738,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 50*60, 50*60, 15, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -953,7 +953,7 @@
 
 // Most probes should stay away fro1m the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 25
+#define MIN_PROBE_EDGE 40
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1085,16 +1085,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 175
+#define X_BED_SIZE 190
 #define Y_BED_SIZE 175
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -16
+#define X_MIN_POS -1
 #define Y_MIN_POS -16
-#define Z_MIN_POS -2
+#define Z_MIN_POS -2.5
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 80
+#define Z_MAX_POS 120
 
 /**
  * Software Endstops
@@ -1224,7 +1224,7 @@
   // split up moves into short segments like a Delta. This follows the
   // contours of the bed more closely than edge-to-edge straight moves.
   #define SEGMENT_LEVELED_MOVES
-  #define LEVELED_SEGMENT_LENGTH 60.0 // (mm) Length of all segments (except the last one)
+  #define LEVELED_SEGMENT_LENGTH 30.0 // (mm) Length of all segments (except the last one)
 
   /**
    * Enable the G26 Mesh Validation Pattern tool.
